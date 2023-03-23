@@ -29,6 +29,7 @@
                 <li class="lisocials"><a href="#"> Twitter</a></li>
                 <li class="lisocials"><a href="#"> Instagram </a></li>
             </ul>
+            <img src="" alt="img">
         </div>
     </header>
 
