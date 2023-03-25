@@ -20,8 +20,9 @@ header {
 }
 
 #logo2pic {
-    height: 50px;
-    width: 100px;
+    height: 75px;
+    width: 150px;
+    margin-left: 100px;
 }
 
 nav {
@@ -76,5 +77,55 @@ a {
 }
 
 a:hover {
-    color: rgb(64, 64, 186);
+    color: #3a6088;
+}
+
+main {
+    background-color: #3a6088;
+    height: 100%;
+    width: auto;
+    padding: 100px 150px;
+}
+
+.recepten {
+    background-color: #3a6088;
+    height: auto;
+    width: auto;
+    padding: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.receptImage {
+    width: 250px;
+    height: 350px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.receptDetails {
+    margin: 0;
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recept {
+    background-color: #dcdcdc;
+    height: 400px;
+    width: 250px;
+    padding: 0;
+    margin: 5px;
+    font-size: 12px;
+    transition: 0.4s;
+    border-radius: 12px;
+
+}
+
+.recept:hover {
+    box-shadow: 3px 4px 15px 1px #d4d4d4;
+    transform: scale(1.02);
+    transition: 0.4s;
 }
