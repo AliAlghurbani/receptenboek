@@ -1,5 +1,4 @@
 * {
-    color: white;
     margin: 0;
 }
 
@@ -22,7 +21,6 @@ header {
 #logo2pic {
     height: 75px;
     width: 150px;
-    margin-left: 100px;
 }
 
 nav {
@@ -58,22 +56,22 @@ nav {
     background-color: rgb(227, 193, 0);
     height: auto;
     width: auto;
-    font-size: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px 0;
+    font-size: 22px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .lisocials {
-    margin: 0.2em;
-    padding: 0.5em;
+    margin: 0.5em;
+    padding: 0.2em;
 }
 
 a {
     text-decoration: none;
     color: white;
-    transition: all 0.4s linear;
+    transition: all 0.3s linear;
 }
 
 a:hover {
@@ -91,7 +89,7 @@ main {
     background-color: #3a6088;
     height: auto;
     width: auto;
-    padding: 75px;
+    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -99,23 +97,21 @@ main {
 }
 
 .receptImage {
-    width: 250px;
-    height: 350px;
+    width: 350px;
+    height: 200px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
 
 .receptDetails {
-    margin: 0;
+    margin: 5px;
     padding: 3px;
-    display: flex;
-    justify-content: space-between;
 }
 
 .recept {
-    background-color: #dcdcdc;
+    background-color: white;
     height: 400px;
-    width: 250px;
+    width: 350px;
     padding: 0;
     margin: 5px;
     font-size: 12px;
@@ -128,4 +124,41 @@ main {
     box-shadow: 3px 4px 15px 1px #d4d4d4;
     transform: scale(1.02);
     transition: 0.4s;
+}
+
+footer {
+    background-color: rgb(227, 193, 0);
+    margin: 0cm;
+    padding: 2em 10em;
+    height: auto;
+    width: auto;
+}
+
+.ulfooter {
+    list-style-type: none;
+    color: white;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+
+}
+
+.lifooter {
+    list-style-type: none;
+    margin: 3px 0;
+    padding: 2px;
+    font-size: 14px;
+    position: relative;
+}
+
+#logofooter {
+    height: 100px;
+    width: 175px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
