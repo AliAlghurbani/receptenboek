@@ -142,6 +142,26 @@ main {
     padding: 3px;
 }
 
+.receptdetailstitle {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+.receptDetailsarticle {
+    margin: 3em 0 1em;
+    padding: 0.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.receptDetails p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    
+}
+
 .recept {
     background-color: white;
     height: 400px;
@@ -155,9 +175,9 @@ main {
 }
 
 .recept:hover {
-    box-shadow: 3px 4px 15px 1px #d4d4d4;
-    transform: scale(1.02);
-    transition: 0.4s;
+    /* box-shadow: 3px 4px 15px 1px #d4d4d4; */
+    transform: scale(1.01);
+    transition: 0.1s;
 }
 
 footer {
