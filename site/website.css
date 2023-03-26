@@ -130,11 +130,42 @@ main {
     flex-wrap: wrap;
 }
 
+.recept {
+    background-color: white;
+    height: 400px;
+    width: 350px;
+    padding: 0;
+    margin: 5px;
+    transition: 0.1s;
+    border-radius: 12px;
+    position: relative;
+
+}
+
+.recept:hover {
+    /* box-shadow: 3px 4px 15px 1px #d4d4d4; */
+    transform: scale(1.01);
+    transition: 0.1s;
+}
+
 .receptImage {
     width: 350px;
     height: 200px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
+}
+
+.koknaam {
+    padding: 0.3em;
+    height: 22px;
+    width: auto;
+    position: absolute;
+    background-color: white;
+    top: 169px;
+    left: 0;
+    border-top-right-radius: 10px;
+    color: rgb(227, 193, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .receptDetails {
@@ -144,7 +175,8 @@ main {
 
 .receptdetailstitle {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: black;
+    font-size: 24px;
+    color: #283d54;
 }
 
 .receptdetailstitle:hover {
@@ -157,6 +189,7 @@ main {
     margin: 3em 0 1em;
     padding: 0.5em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
 }
 
 .receptDetails p {
@@ -167,24 +200,6 @@ main {
     font-size: 14px;
     font-weight: 700;
     color: rgb(227, 193, 0);
-}
-
-.recept {
-    background-color: white;
-    height: 400px;
-    width: 350px;
-    padding: 0;
-    margin: 5px;
-    font-size: 12px;
-    transition: 0.4s;
-    border-radius: 12px;
-
-}
-
-.recept:hover {
-    /* box-shadow: 3px 4px 15px 1px #d4d4d4; */
-    transform: scale(1.01);
-    transition: 0.1s;
 }
 
 footer {

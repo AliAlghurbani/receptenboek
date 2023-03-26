@@ -1,4 +1,24 @@
-<!DOCTYPE html>
+<?php
+require 'database.php';
+
+//de sql query
+$sql = "SELECT * FROM receptenboek";
+
+//hier wordt de query uitgevoerd met de database
+$result = mysqli_query($conn, $sql);
+
+/**
+ * Hier wordt het resultaat ($result) omgezet
+ * in een *multidimensionale associatieve array
+ * in dit voorbeeld staat $all_users maar dit mag
+ * voor bijvoorbeeld producten $all_products heten.
+ * Maar dit kies je zelf
+ */
+$all_recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+
+?>
+
 <html lang="en">
 
 <head>
@@ -55,6 +75,9 @@
             </div>
             <div class="recept">
                 <img class="receptImage" src="ropa vieja1.jpg" alt="recept1">
+                <div class="koknaam">
+                    <p> mesut ozil</p>
+                </div>
                 <div class="receptDetails">
                     <h1><a href="#" class="receptdetailstitle"> Cuban Shrimp Tamales </a></h1>
                     <div class="receptDetailsarticle">
