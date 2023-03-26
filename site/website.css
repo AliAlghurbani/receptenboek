@@ -139,27 +139,34 @@ main {
 
 .receptDetails {
     margin: 5px;
-    padding: 3px;
+    padding: 0 3px;
 }
 
 .receptdetailstitle {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: black;
 }
+
+.receptdetailstitle:hover {
+    color: rgb(227, 193, 0);
+}
+
 .receptDetailsarticle {
+    max-width: 322px;
+    max-height: 53px;
     margin: 3em 0 1em;
     padding: 0.5em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
 }
 
 .receptDetails p {
-    margin: 0;
+    /*i have a question here*/
+    margin-top: 30px;
     padding: 0;
-    margin-bottom: auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-    
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(227, 193, 0);
 }
 
 .recept {
