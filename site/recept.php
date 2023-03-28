@@ -1,3 +1,19 @@
+<?php
+require 'database.php';
+
+$receptnummer = $_GET["receptnummer"];
+
+$sql = "SELECT * FROM receptenboek WHERE receptnummer = $receptnummer";
+
+$result = mysqli_query($conn, $sql);
+//zolang een rij gevuld kan worden wordt de loop uitgevoerd
+$recept = mysqli_fetch_assoc($result);
+
+echo $recept["titel"];
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,7 +48,7 @@
             </ul>
         </div>
         <div>
-            <img id="logo2pic" src="logo3-removebg-preview.png" alt="img">
+            <img id="logo2pic" src="<?php echo $recept['foto2'] ?>" alt="img">
         </div>
     </header>
 
@@ -42,23 +58,23 @@
         <div class="top">
             <div class="topdetails">
                 <div class="receptnaam">
-                    <h1> Shrimp tamels </h1>
-                    <p> chef Sue McWilliams </p>
+                    <h1><?php echo $recept['titel'] ?> </h1>
+                    <p><?php echo $recept['kok'] ?></p>
                 </div>
                 <div class="extradetails">
                     <div class="preptime">
                         <p> Prep time</p>
-                        <h1> 5m </h1>
+                        <h1><?php echo $recept['bereidtijd'] ?></h1>
                         <span class="material-symbols-outlined">schedule</span>
                     </div>
                     <div class="cooktime">
                         <p> Cook time</p>
-                        <h1> 30m </h1>
+                        <h1><?php echo $recept['kooktijd'] ?></h1>
                         <span class="material-symbols-outlined">schedule</span>
                     </div>
                     <div class="serves">
                         <p> Serves </p>
-                        <h1> 5 </h1>
+                        <h1><?php echo $recept['aantalserves'] ?></h1>
                         <span class="material-symbols-outlined"> group </span>
                     </div>
                 </div>

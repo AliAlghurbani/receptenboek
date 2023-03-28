@@ -5,7 +5,7 @@
 
 header {
     width: 100%;
-    height: 100%;
+    height: 100px;
     margin: 0;
     padding: 0;
     background-color: rgb(227, 193, 0);
@@ -81,7 +81,7 @@ a:hover {
 
 main {
     background-color: #3a6088;
-    height: 100%;
+    height: auto;
     width: auto;
     padding: 50px 150px;
 }
@@ -162,7 +162,7 @@ main {
     width: auto;
     position: absolute;
     background-color: white;
-    top: 169px;
+    top: 180px;
     left: 0;
     border-top-right-radius: 10px;
     color: rgb(227, 193, 0);
@@ -194,8 +194,8 @@ main {
 }
 
 .receptDetails p {
-    /*i have a question here*/
-    margin-top: 30px;
+    position: absolute;
+    bottom: 15px;
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 14px;

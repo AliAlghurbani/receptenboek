@@ -26,7 +26,7 @@ $all_recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="recepten.css">
+    <link rel="stylesheet" href="recepten.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Cubano</title>
 </head>
@@ -48,7 +48,7 @@ $all_recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
                 <li class="lisocials"><a href="#" class="fa fa-facebook"></a></li>
                 <li class="lisocials"><a href="#" class="fa fa-youtube"></a></li>
                 <li class="lisocials"><a href="#" class="fa fa-twitter"></a></li>
-                <li class="lisocials"><a href="#" class="fa fa-instagram"></a></li>
+                <li class="lisocials"><a href="https://www.instagram.com/decubano9/" class="fa fa-instagram"></a></li>
             </ul>
         </div>
         <div>
@@ -64,25 +64,24 @@ $all_recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
         <div class="recepten">
 
 
-
-            <div class="recept">
-                <?php foreach ($all_recepten as $recept) : ?>
-                    <a href="recept.php?id=<?php echo $recept['receptnummer'] ?>">
-                        <img class="receptImage" src="tamales2.jpg" alt="recept1">
+            <?php foreach ($all_recepten as $recept) : ?>
+                <div class="recept">
+                    <a href="recept.php?receptnummer=<?php echo $recept['receptnummer']?>">
+                        <img class="receptImage" src="<?php echo $recept['foto2']; ?>" alt="receptfoto">
                         <div class="koknaam">
-                            <p> mesut ozil</p>
+                            <p><?php echo $recept['kok'] ?></p>
                         </div>
                         <div class="receptDetails">
-                            <h1><a href="#" class="receptdetailstitle"> Cuban Shrimp Tamales </a></h1>
+                            <h1><a href="#" class="receptdetailstitle"> </a> <?php echo $recept['titel'] ?></h1>
                             <div class="receptDetailsarticle">
-                                Tamales in Cuba can be traced back to the Ciboney,
-                                the original native inhabitants of the island.
+                                <?php echo $recept['menu_omschrijving'] ?>
                             </div>
                             <p> READ MORE</p>
                         </div>
                     </a>
-                <?php endforeach; ?>
-            </div>
+                </div>
+            <?php endforeach; ?>
+
 
 
         </div>
