@@ -1,24 +1,4 @@
-<?php
-require 'database.php';
-
-//de sql query
-$sql = "SELECT * FROM receptenboek";
-
-//hier wordt de query uitgevoerd met de database
-$result = mysqli_query($conn, $sql);
-
-/**
- * Hier wordt het resultaat ($result) omgezet
- * in een *multidimensionale associatieve array
- * in dit voorbeeld staat $all_users maar dit mag
- * voor bijvoorbeeld producten $all_products heten.
- * Maar dit kies je zelf
- */
-$all_recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
-
-?>
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -26,10 +6,6 @@ $all_recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="website.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fasthand:wght@700&family=Noto+Sans+Symbols+2&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Cubano</title>
 </head>
@@ -68,13 +44,13 @@ $all_recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 
             <div class="recept" style="color: black;">
-                <img class="receptImage" src="ropa vieja1.jpg" alt="recept1">
+                <img class="receptImage" src="" alt="recept1">
                 <div class="receptDetails">
                     <h1> Ropa vieja </h1>
                 </div>
             </div>
             <div class="recept">
-                <img class="receptImage" src="ropa vieja1.jpg" alt="recept1">
+                <img class="receptImage" src="tamales2.jpg" alt="recept1">
                 <div class="koknaam">
                     <p> mesut ozil</p>
                 </div>
