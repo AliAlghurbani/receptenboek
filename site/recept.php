@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="website.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Cubano</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="recept-details.css">
+    <title>Shrimp tamels</title>
 </head>
 
 <body>
@@ -35,63 +36,40 @@
         </div>
     </header>
 
+
     <main>
 
-        <div class="titlecontainer">
-            <h1 class="title"> RECEPTEN </h1>
-        </div>
-        <div class="recepten">
-
-
-            <div class="recept" style="color: black;">
-                <img class="receptImage" src="" alt="recept1">
-                <div class="receptDetails">
-                    <h1> Ropa vieja </h1>
+        <div class="top">
+            <div class="topdetails">
+                <div class="receptnaam">
+                    <h1> Shrimp tamels </h1>
+                    <p> chef Sue McWilliams </p>
                 </div>
-            </div>
-            <div class="recept">
-                <img class="receptImage" src="tamales2.jpg" alt="recept1">
-                <div class="koknaam">
-                    <p> mesut ozil</p>
-                </div>
-                <div class="receptDetails">
-                    <h1><a href="#" class="receptdetailstitle"> Cuban Shrimp Tamales </a></h1>
-                    <div class="receptDetailsarticle">
-                        Tamales in Cuba can be traced back to the Ciboney,
-                        the original native inhabitants of the island.
+                <div class="extradetails">
+                    <div class="preptime">
+                        <p> Prep time</p>
+                        <h1> 5m </h1>
+                        <span class="material-symbols-outlined">schedule</span>
                     </div>
-                    <p> READ MORE</p>
+                    <div class="cooktime">
+                        <p> Cook time</p>
+                        <h1> 30m </h1>
+                        <span class="material-symbols-outlined">schedule</span>
+                    </div>
+                    <div class="serves">
+                        <p> Serves </p>
+                        <h1> 5 </h1>
+                        <span class="material-symbols-outlined"> group </span>
+                    </div>
                 </div>
             </div>
-            <div class="recept">
-                <img class="receptImage" src="ropa vieja1.jpg" alt="recept1">
-                <div class="receptDetails">
-                    <h1> </h1>
-                </div>
-            </div>
-            <div class="recept">
-                <img class="receptImage" src="ropa vieja1.jpg" alt="recept1">
-                <div class="receptDetails">
-                    <h1> </h1>
-                </div>
-            </div>
-            <div class="recept">
-                <img class="receptImage" src="ropa vieja1.jpg" alt="recept1">
-                <div class="receptDetails">
-                    <h1> </h1>
-                </div>
-            </div>
-            <div class="recept">
-                <img class="receptImage" src="ropa vieja1.jpg" alt="recept1">
-                <div class="receptDetails">
-                    <h1> </h1>
-                </div>
-            </div>
+            <img id="image1" src="ropa vieja2.jpg" alt="picture">
+        </div>
 
+        <div class="omschrijving">
 
         </div>
     </main>
-
 
     <footer>
 

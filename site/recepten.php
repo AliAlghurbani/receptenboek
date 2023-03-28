@@ -1,15 +1,34 @@
-<!DOCTYPE html>
+<?php
+require 'database.php';
+
+//de sql query
+$sql = "SELECT * FROM receptenboek";
+
+//hier wordt de query uitgevoerd met de database
+$result = mysqli_query($conn, $sql);
+
+/**
+ * Hier wordt het resultaat ($result) omgezet
+ * in een *multidimensionale associatieve array
+ * in dit voorbeeld staat $all_users maar dit mag
+ * voor bijvoorbeeld producten $all_products heten.
+ * Maar dit kies je zelf
+ */
+$all_recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+
+?>
+
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recepten.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="recept-details.css">
-    <title>Shrimp tamels</title>
+    <title>Cubano</title>
 </head>
 
 <body>
@@ -37,40 +56,38 @@
         </div>
     </header>
 
-
     <main>
 
-        <div class="top">
-            <div class="topdetails">
-                <div class="receptnaam">
-                    <h1> Shrimp tamels </h1>
-                    <p> chef Sue McWilliams </p>
-                </div>
-                <div class="extradetails">
-                    <div class="preptime">
-                        <p> Prep time</p>
-                        <h1> 5m </h1>
-                        <span class="material-symbols-outlined">schedule</span>
-                    </div>
-                    <div class="cooktime">
-                        <p> Cook time</p>
-                        <h1> 30m </h1>
-                        <span class="material-symbols-outlined">schedule</span>
-                    </div>
-                    <div class="serves">
-                        <p> Serves </p>
-                        <h1> 5 </h1>
-                        <span class="material-symbols-outlined"> group </span>
-                    </div>
-                </div>
-            </div>
-            <img id="image1" src="ropa vieja2.jpg" alt="picture">
+        <div class="titlecontainer">
+            <h1 class="title"> RECEPTEN </h1>
         </div>
+        <div class="recepten">
 
-        <div class="omschrijving">
+
+
+            <div class="recept">
+                <?php foreach ($all_recepten as $recept) : ?>
+                    <a href="recept.php?id=<?php echo $recept['receptnummer'] ?>">
+                        <img class="receptImage" src="tamales2.jpg" alt="recept1">
+                        <div class="koknaam">
+                            <p> mesut ozil</p>
+                        </div>
+                        <div class="receptDetails">
+                            <h1><a href="#" class="receptdetailstitle"> Cuban Shrimp Tamales </a></h1>
+                            <div class="receptDetailsarticle">
+                                Tamales in Cuba can be traced back to the Ciboney,
+                                the original native inhabitants of the island.
+                            </div>
+                            <p> READ MORE</p>
+                        </div>
+                    </a>
+                <?php endforeach; ?>
+            </div>
+
 
         </div>
     </main>
+
 
     <footer>
 
