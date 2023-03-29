@@ -66,13 +66,13 @@ $all_recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
             <?php foreach ($all_recepten as $recept) : ?>
                 <div class="recept">
-                    <a href="recept.php?receptnummer=<?php echo $recept['receptnummer']?>">
+                    <a href="recept.php?receptnummer=<?php echo $recept['receptnummer'] ?>">
                         <img class="receptImage" src="<?php echo $recept['foto2']; ?>" alt="receptfoto">
                         <div class="koknaam">
                             <p><?php echo $recept['kok'] ?></p>
                         </div>
                         <div class="receptDetails">
-                            <h1><a href="#" class="receptdetailstitle"> </a> <?php echo $recept['titel'] ?></h1>
+                            <h1><a href="#" class="receptdetailstitle"> <?php echo $recept['titel'] ?> </a></h1>
                             <div class="receptDetailsarticle">
                                 <?php echo $recept['menu_omschrijving'] ?>
                             </div>

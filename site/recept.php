@@ -9,8 +9,6 @@ $result = mysqli_query($conn, $sql);
 //zolang een rij gevuld kan worden wordt de loop uitgevoerd
 $recept = mysqli_fetch_assoc($result);
 
-echo $recept["titel"];
-
 ?>
 
 
@@ -29,7 +27,7 @@ echo $recept["titel"];
 
 <body>
     <header>
-        <img id="logopic" src="LOGO-removebg-preview.png" alt="LOGO">
+        <a href="recepten.php"><img id="logopic" src="LOGO-removebg-preview.png" alt="LOGO"></a>
         <nav>
 
             <ul class="ulnav">
@@ -48,7 +46,7 @@ echo $recept["titel"];
             </ul>
         </div>
         <div>
-            <img id="logo2pic" src="<?php echo $recept['foto2'] ?>" alt="img">
+            <a href="recepten.php"><img id="logo2pic" src="logo3-removebg-preview.png" alt="img"></a>
         </div>
     </header>
 
@@ -79,10 +77,16 @@ echo $recept["titel"];
                     </div>
                 </div>
             </div>
-            <img id="image1" src="ropa vieja2.jpg" alt="picture">
+            <img id="image1" src="<?php echo $recept['foto1'] ?>" alt="picture">
         </div>
 
         <div class="omschrijving">
+
+        </div>
+        <div class="ingredienten">
+            
+        </div>
+        <div class="instructies">
 
         </div>
     </main>
