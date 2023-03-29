@@ -81,13 +81,15 @@ $recept = mysqli_fetch_assoc($result);
         </div>
 
         <div class="omschrijving">
-
+            <?php echo $recept['omschrijving']?>
         </div>
         <div class="ingredienten">
-            
+            <h1> Ingredienten </h1>
+            <?php echo $recept['ingredienten']?>
         </div>
         <div class="instructies">
-
+            <h1> instructies </h1>
+            <?php echo $recept['instructies']?>
         </div>
     </main>
 
