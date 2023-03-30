@@ -61,8 +61,11 @@ $all_recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
         <div class="titlecontainer">
             <h1 class="title"> RECEPTEN </h1>
         </div>
-        <div class="recepten">
+        <div class="specialsButton">
+            <a href="specials.php"> specials </a>
+        </div>
 
+        <div class="recepten">
 
             <?php foreach ($all_recepten as $recept) : ?>
                 <div class="recept">
