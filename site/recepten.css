@@ -1,6 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 header {
@@ -254,3 +255,137 @@ footer {
     margin: 0.5em;
 
 }
+
+/*details page*/
+
+.main2 {
+    background-color: #3a6088;
+    height: 100%;
+    width: auto;
+    padding: 0;
+}
+
+.top {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: aliceblue;
+}
+
+#image1 {
+    width: 50%;
+    height: 650px;
+}
+
+.topdetails {
+    padding: 5em 2em;
+    min-width: 50%;
+    height: 650px;
+    font-size: 26px;
+    background-color: #3a6088;
+    color: white;
+}
+
+.receptnaam {
+    min-height: 70%;
+    padding: 4em 0;
+    width: auto;
+    text-align: center;
+}
+
+.material-symbols-outlined {
+    font-size: 20px;
+}
+
+.extradetails {
+    background-color: #283d54;
+    border-radius: 12px;
+    width: 100%;
+    min-height: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.preptime {
+    margin: auto;
+    text-align: center;
+}
+
+.preptime p {
+    font-size: 14px;
+}
+
+.preptime h1 {
+    font-size: 36px;
+}
+
+.cooktime {
+    margin: auto;
+    text-align: center;
+}
+
+.cooktime p {
+    font-size: 14px;
+}
+
+.cooktime h1 {
+    font-size: 36px;
+}
+
+.serves {
+    margin: auto;
+    text-align: center;
+}
+
+.serves p {
+    font-size: 14px;
+}
+
+.serves h1 {
+    font-size: 36px;
+}
+
+
+.omschrijving {
+    width: 100%;
+    height: auto;
+    color: #3a6088;
+    background-color: white;
+    line-height: 25px;
+    padding: 10vh 20vh;
+}
+
+.ingredienten {
+    width: 100%;
+    height: auto;
+    color: white;
+    background-color: #3a6088;
+    line-height: 25px;
+    padding: 10vh 20vh;
+}
+
+.ingredienten h1 {
+    color: rgb(227, 193, 0);
+    border-bottom: solid 3px rgb(227, 193, 0);
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 5vh;
+}
+
+.instructies {
+    width: 100%;
+    height: auto;
+    color: #3a6088;
+    background-color: white;
+    line-height: 25px;
+    padding: 10vh 20vh;
+}
+
+.instructies h1 {
+    color: rgb(227, 193, 0);
+    border-bottom: solid 3px rgb(227, 193, 0);
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 5vh;
+}
+
