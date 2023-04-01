@@ -24,15 +24,13 @@ $all_recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
 include 'header.php';
 ?>
 
-<main>
+<main class="main1">
 
     <div class="titlecontainer">
         <h1 class="title"> RECEPTEN </h1>
     </div>
 
-    <button>
-        <a href="specials.php"> Specials </a>
-    </button>
+    <a href="specials.php" class="specialsButton">Go to Specials</a>
 
     <div class="recepten">
 
