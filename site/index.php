@@ -13,7 +13,7 @@ include 'header.php';
     <title> Cubano Home page </title>
 </head>
 <body>
-    <main>
+    <main class="main0">
 
     </main>
     
