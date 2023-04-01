@@ -29,9 +29,10 @@ include 'header.php';
     <div class="titlecontainer">
         <h1 class="title"> RECEPTEN </h1>
     </div>
-    <div class="specialsButton">
-        <a href="specials.php"> specials </a>
-    </div>
+
+    <button>
+        <a href="specials.php"> Specials </a>
+    </button>
 
     <div class="recepten">
 
@@ -52,9 +53,6 @@ include 'header.php';
                 </a>
             </div>
         <?php endforeach; ?>
-
-
-
     </div>
 </main>
 

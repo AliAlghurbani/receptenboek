@@ -11,13 +11,14 @@
 
 <body>
     <header>
-        <img id="logopic" src="LOGO-removebg-preview.png" alt="LOGO">
+        <a href="index.php"><img id="logopic" src="images/LOGO-removebg-preview.png" alt="LOGO"></a>
         <nav>
 
             <ul class="ulnav">
+                <li class="linav"> <a href="#">HOME PAGE </a></li>
                 <li class="linav"> <a href="#">CUBA </a></li>
-                <li class="linav"><a href="#"> RECIPES </a></li>
-                <li class="linav"><a href="#"> SPECIAL EVENTS </a></li>
+                <li class="linav"><a href="recepten.php"> RECIPES </a></li>
+                <li class="linav"><a href="contact.php"> SPECIAL EVENTS </a></li>
                 <li class="linav"><a href="#"> ABOUT OUR BOOK</a></li>
             </ul>
         </nav>
@@ -30,6 +31,6 @@
             </ul>
         </div>
         <div>
-            <img id="logo2pic" src="logo3-removebg-preview.png" alt="img">
+            <a href="index.php"><img id="logo2pic" src="images/logo3-removebg-preview.png" alt="img"></a>
         </div>
     </header>

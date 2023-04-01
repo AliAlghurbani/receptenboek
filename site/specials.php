@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else if ($filterOption == "shortest") {
         $sql = "SELECT * FROM receptenboek WHERE total_duur = (SELECT MIN(total_duur) FROM receptenboek)";
     } else {
-        $sql = "SELECT * FROM receptenboek";
+        $sql = "SELECT * FROM receptenboek ";
     }
 
     $result = mysqli_query($conn, $sql);
@@ -51,6 +51,8 @@ include 'header.php';
         </select>
         <button type="submit">Filter Recipes</button>
     </form>
+
+    
 
     <div class="recepten">
 

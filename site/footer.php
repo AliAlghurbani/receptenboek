@@ -18,5 +18,5 @@
         <li> | </li>
         <li class="lifooter"> <a href="#"> CONTACT </a></li>
     </ul>
-    <img id="logofooter" src="logo3-removebg-preview.png" alt="img">
+    <img id="logofooter" src="images/logo3-removebg-preview.png" alt="img">
 </footer>
