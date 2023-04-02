@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 include 'header.php';
 ?>
 
-<main>
+<main class="main1">
 
     <div class="titlecontainer">
         <h1 class="title"> RECEPTEN </h1>
