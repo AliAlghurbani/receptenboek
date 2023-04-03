@@ -25,6 +25,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $recept = mysqli_fetch_assoc($result);
 }
+
+
 ?>
 
 
