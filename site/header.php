@@ -15,7 +15,7 @@
         <nav>
 
             <ul class="ulnav">
-                <li class="linav"> <a href="#">HOME PAGE </a></li>
+                <li class="linav"> <a href="index.php">HOME PAGE </a></li>
                 <li class="linav"> <a href="#">CUBA </a></li>
                 <li class="linav"><a href="recepten.php"> RECIPES </a></li>
                 <li class="linav"><a href="contact.php"> SPECIAL EVENTS </a></li>
