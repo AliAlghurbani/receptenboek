@@ -52,7 +52,7 @@ include 'header.php';
         <button type="submit">Filter Recipes</button>
     </form>
 
-    
+
 
     <div class="recepten">
 
@@ -78,6 +78,7 @@ include 'header.php';
 <?php
 include 'footer.php';
 ?>
+
 
 </body>
 
