@@ -51,7 +51,7 @@ include 'header.php';
             <option value="longest">Longest</option>
             <option value="shortest">Shortest</option>
         </select>
-        <button type="submit">Filter Recipes</button>
+        <button type="submit"> Filter Recipes </button>
     </form>
 
 
