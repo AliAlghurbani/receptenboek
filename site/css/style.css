@@ -478,6 +478,12 @@ footer {
     margin-right: auto;
 }
 
+.inloggensul {
+    list-style: none;
+    margin: 5px;
+}
+
+
 .regisul {
     list-style: none;
     margin: 0 auto;
@@ -486,7 +492,7 @@ footer {
     flex-wrap: wrap;
 }
 
-.regisli{
+.regisli {
     margin: 10px;
 }
 
@@ -517,7 +523,7 @@ button {
     padding: 10px 16px;
     border-radius: 20px;
     margin-top: 20px;
-    background-color:rgb(227, 193, 0);
+    background-color: rgb(227, 193, 0);
 }
 
 button:hover {

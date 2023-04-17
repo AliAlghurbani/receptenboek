@@ -38,7 +38,7 @@
                     <input type="text" id="txtLand" name="txtLand" placeholder="Land">
                 </li>
                 <li class="regisli">
-                    <button type="submit"> OK </button>
+                    <button type="submit"> RIGESTER </button>
                 </li>
             </ul>
         </form>
