@@ -456,3 +456,71 @@ footer {
     padding: 10px;
     margin-bottom: 5vh;
 }
+
+/* registration */
+
+.regismain {
+    width: 100%;
+    background-color: #283d54;
+    padding: 100px;
+}
+
+.regiscontainer {
+    width: 60%;
+    border-radius: 20px;
+}
+
+.regisform {
+    background-color: #3a6088;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: auto;
+    margin-right: auto;
+}
+
+.regisul {
+    list-style: none;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.regisli{
+    margin: 10px;
+}
+
+input {
+    appearance: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 6px;
+    font-size: 1.1em;
+}
+
+label {
+    font-size: 0.6em;
+    color: rgb(227, 193, 0);
+    padding-left: 16px;
+    text-transform: uppercase;
+}
+
+input:focus {
+    background-color: white;
+    color: black;
+}
+
+button {
+    appearance: none;
+    border: 1px solid transparent;
+    padding: 10px 16px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color:rgb(227, 193, 0);
+}
+
+button:hover {
+    border: 1px solid black;
+    cursor: pointer;
+}

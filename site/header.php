@@ -1,3 +1,13 @@
+<?php
+require 'database.php';
+
+
+$result = mysqli_query($conn, "SELECT DISTINCT COUNT(receptnummer) FROM receptenboek");
+$row = mysqli_fetch_array($result);
+
+?>
+
+
 <html lang="en">
 
 <head>
@@ -19,7 +29,7 @@
                 <li class="linav"> <a href="#">CUBA </a></li>
                 <li class="linav"><a href="recepten.php"> RECIPES </a></li>
                 <li class="linav"><a href="contact.php"> SPECIAL EVENTS </a></li>
-                <li class="linav"><a href="#"> ABOUT OUR BOOK</a></li>
+                <li class="linav"><a href="#"><?php echo $row[0]; ?> RECEPTEN </a></li>
             </ul>
         </nav>
         <div class="divsocials">
