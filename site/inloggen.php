@@ -2,7 +2,7 @@
 
 <main class="regismain">
     <div class="regiscontainer">
-        <form class="regisform" method="post">
+        <form class="regisform" method="post" action="verwerk_inloggen.php">
             <ul class="inloggensul">
                 <li class="regisli">
                     <label for="txtEmail">Email</label><br>

@@ -3,7 +3,7 @@
 
 <main class="regismain">
     <div class="regiscontainer">
-        <form class="regisform" method="post">
+        <form class="regisform" method="post" action="verwerk_regis.php">
             <ul class="regisul">
                 <li class="regisli">
                     <label for="txtVoornaam">Voornaam</label><br>
