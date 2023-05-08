@@ -457,7 +457,39 @@ footer {
     margin-bottom: 5vh;
 }
 
-/* registration */
+/* inloggen button */
+.inloggenButton {
+    display: inline-block;
+    background-color: #283d54;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    margin: 15px;
+    padding: 12px 24px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.inloggenButton:hover {
+    color: rgb(248, 234, 156);
+    transition: 0.2s ease-out, color 0.2s ease-out;
+}
+
+/* registration / logging in */
+
+
+.regislink {
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s linear;
+}
+
+.regislink:hover {
+    color: rgb(227, 193, 0);
+}
 
 .regismain {
     width: 100%;

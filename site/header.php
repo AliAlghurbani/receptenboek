@@ -41,6 +41,6 @@ $row = mysqli_fetch_array($result);
             </ul>
         </div>
         <div>
-            <a href="index.php"><img id="logo2pic" src="images/logo3-removebg-preview.png" alt="img"></a>
+            <a href="inloggen.php" class="inloggenButton"> INLOGGEN </a>
         </div>
     </header>
