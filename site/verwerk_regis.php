@@ -15,10 +15,12 @@ $postcode = $_POST['txtPostcode'];
 $email = $_POST['txtEmail'];
 $password = $_POST['txtPassword'];
 
-$sql = "INSERT INTO gebruikers (voornaam, achternaam, postcode, email, password)
- VALUES ('$voornaam', '$achternaam', '$postcode', '$email', '$password') ";
+$sql = "INSERT INTO gebruikers (voornaam, achternaam, postcode, email, password , role)
+ VALUES ('$voornaam', '$achternaam', '$postcode', '$email', '$password', 'browser') ";
 
 mysqli_query($conn, $sql);
 
+header("location: inloggen.php");
+exit;
 
 ?>

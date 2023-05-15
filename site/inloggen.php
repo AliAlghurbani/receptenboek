@@ -4,6 +4,9 @@
     <div class="regiscontainer">
         <form class="regisform" method="post" action="verwerk_inloggen.php">
             <ul class="inloggensul">
+                <?php if (isset($_GET['error'])) { ?>
+                    <p class="error"><?php echo $_GET['error']; ?></p>
+                <?php } ?>
                 <li class="regisli">
                     <label for="txtEmail">Email</label><br>
                     <input type="text" id="txtEmail" name="email" placeholder="Email" autofocus>
