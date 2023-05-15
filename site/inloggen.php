@@ -6,11 +6,11 @@
             <ul class="inloggensul">
                 <li class="regisli">
                     <label for="txtEmail">Email</label><br>
-                    <input type="text" id="txtEmail" name="txtEmail" placeholder="Email" autofocus>
+                    <input type="text" id="txtEmail" name="email" placeholder="Email" autofocus>
                 </li>
                 <li class="regisli">
                     <label for="txtPassword">Password</label><br>
-                    <input type="text" id="txtPassword" name="txtPassword" placeholder="Password">
+                    <input type="text" id="txtPassword" name="password" placeholder="Password">
                 </li>
                 <li>
                     <a href="registratie.php" class="regislink"> I DON'T HAVE AN ACCOUNT!</a>
